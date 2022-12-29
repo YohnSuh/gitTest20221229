@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test9.html</title>
+<script type="text/javascript">
+//window - history => 웹브라우저의 방문기록을 저장해주는 내장객체.
+//window 생략 가능.
+//history.변수 => history.length 방문기록의 개수를 저장하는 변수
+//history.함수() => history.back()  <- 이전페이지 이동
+//history.함수() => history.forward() -> 다음페이지 이동
+//history.함수() => history.go(-1)/ 이전, go(1) /다음
+
+function fun1() {
+	alert(history.length);
+
+}
+
+function fun2() {
+	history.back();
+	//이전페이지 이동, 뒤로이동 
+}
+
+function fun3() {
+	history.forward();
+	//다음페이지 이동, 앞으로 이동
+}
+
+function fun4() {
+	alert("뒤로 이동");
+	history.back();
+	
+}
+
+</script>
+</head>
+<body>
+
+<input type="button" value="방문기록개수" onclick="fun1()" >
+<input type="button" value="뒤로이동" onclick="fun2()" >
+<input type="button" value="다음이동" onclick="fun3()" >
+<input type="button" value="뒤로이동2" onclick="fun4()" >
+<!-- <input type="button" value="방문기록개수" onclick="fun1()" > -->
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js1/test4.html</title>
+<!-- //함수정의 인사말 출력 fun1() "안녕하세요" -->
+<!-- //함수호출  -->
+<!-- //함수정의 fun2() 두 수를 받아서 합계 출력 -->
+<!-- //함수호출  -->
+
+<script type="text/javascript">
+
+function fun1() {
+	alert("안녕하세요");	
+}
+fun1();
+
+// function fun2(a,b) {
+// 	alert(a+b);
+// }
+// fun2(1,30);
+
+function fun2(x,y) {
+	alert(x+y);
+	return;
+	
+}
+fun2(1,20);
+
+//함수정의 fun3() "커피" 리턴
+function fun3() {
+	alert("무료 커피 제공");
+	return "커피";
+}
+//fun3(); //커피값이 리턴되면 fun3이 변수가 되면서 커피값이 저장된다.
+alert( "전달받은 값 : " + fun3() );
+//이때 fun3에 값이 잘 저장됐는지를 확인해보려면 출력해보면 된다.
+
+//함수정의 fun4() "음료수" 리턴
+
+function fun4(m) {
+	alert("500원을 받아서 음료수 리턴");
+	return "음료수";
+	
+}
+alert("전달받은 값 : " + fun4(500) );
+
+//함수정의 fun5() 두수를 받아서 두 수의 합계를 리턴.
+function fun5(a,b) {
+	var sum = a+b;
+	return sum;
+	
+}
+fun5(10,20);
+alert("전달받은 값: " + fun5(10,20));
+alert("전달받은 값을 2로 나누기 : " + ( fun5(10,20)/2 ) );
+//리턴값을 받으면 활용을 할 수 있음. 리턴을 안받으면 거기서 함수가 끝남.
+
+	
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
